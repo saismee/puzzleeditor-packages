@@ -1,0 +1,58 @@
+{
+	"editor_version": 2,
+	"name": "Weighted Button",
+	
+	"editor": {
+		"mesh": "res://meshes/floor_button.obj",
+		
+		"options": {
+			"button_type": {
+				"type": "radio",
+				"value": 0,
+				"name": "Button Type",
+				"options": [
+					"Weighted",
+					"Cube",
+					"Sphere",
+					"Contraption"
+				]
+			}
+		}
+	},
+	
+	"export": {
+		"embedded_voxels": [],
+		"conditions": [
+			{
+				"type": "switch",
+				"key": "button_type",
+				"results": {
+					"0": [
+						{
+							"type": "add_instance",
+							"instance": "weighted_floor_button.vmf"
+						}
+					],
+					"1": [
+						{
+							"type": "add_instance",
+							"instance": "weighted_cube_button.vmf"
+						}
+					],
+					"2": [
+						{
+							"type": "add_instance",
+							"instance": "weighted_sphere_button.vmf"
+						}
+					],
+					"3": [
+						{
+							"type": "add_instance",
+							"instance": "weighted_contraption_button.vmf"
+						}
+					]
+				}
+			}
+		]
+	}
+}

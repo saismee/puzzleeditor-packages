@@ -1,0 +1,23 @@
+{
+	"editor_version": 1,
+	"name": "Exit Door",
+	
+	"editor": {
+		"locked": true,
+		"mesh": "res://meshes/exit_door.obj",
+		
+		"options": {
+			"start_open": {
+				"type": "toggle",
+				"value": true,
+				"name": "Start Open"
+			}
+		}
+	},
+	
+	"export": {
+		"embedded_voxels": [
+			"(0,-1,0)"
+		]
+	}
+}

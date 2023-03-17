@@ -1,0 +1,20 @@
+{
+	"editor_version": 1,
+	"name": "Entry Door",
+	
+	"editor": {
+		"locked": true,
+		"mesh": "res://meshes/entry_door.obj",
+	},
+	
+	"export": {
+		"_comment_embedded_voxels": [
+			"embedded_voxels is stored relative to the surface the object is placed on",
+			"(0,0,0) is the entity's position (unncessary), with (0,-1,0) being the voxel directly 'below' the entity",
+			""
+		],
+		"embedded_voxels": [
+			"(0,-1,0)"
+		]
+	}
+}
