@@ -4,7 +4,7 @@
 	
 	"editor": {
 		"locked": true,
-		"mesh": "res://editor/meshes/entry_door.obj"
+		"mesh": "res://packages/editor/meshes/entry_door.obj"
 	},
 	
 	"export": {

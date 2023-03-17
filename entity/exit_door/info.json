@@ -4,7 +4,7 @@
 	
 	"editor": {
 		"locked": true,
-		"mesh": "res://editor/meshes/exit_door.obj",
+		"mesh": "res://packages/editor/meshes/exit_door.obj",
 		
 		"options": {
 			"start_open": {
