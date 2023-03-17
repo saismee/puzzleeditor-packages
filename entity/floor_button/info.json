@@ -30,25 +30,25 @@
 					"0": [
 						{
 							"type": "add_instance",
-							"instance": "weighted_floor_button.vmf"
+							"instance": "floor_button/weighted_floor_button.vmf"
 						}
 					],
 					"1": [
 						{
 							"type": "add_instance",
-							"instance": "weighted_cube_button.vmf"
+							"instance": "floor_button/weighted_cube_button.vmf"
 						}
 					],
 					"2": [
 						{
 							"type": "add_instance",
-							"instance": "weighted_sphere_button.vmf"
+							"instance": "floor_button/weighted_sphere_button.vmf"
 						}
 					],
 					"3": [
 						{
 							"type": "add_instance",
-							"instance": "weighted_contraption_button.vmf"
+							"instance": "floor_button/weighted_contraption_button.vmf"
 						}
 					]
 				}
