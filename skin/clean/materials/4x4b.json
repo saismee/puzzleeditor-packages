@@ -1,4 +1,4 @@
 {
-	"editor": "res://textures/4x4b.png",
+	"editor": "res://packages/editor/textures/4x4b.png",
 	"export": "metal/black_wall_metal_002b"
 }

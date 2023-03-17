@@ -1,4 +1,4 @@
 {
-	"editor": "res://textures/1x2w.png",
+	"editor": "res://packages/editor/textures/1x2w.png",
 	"export": "tile/white_wall_tile003a"
 }
