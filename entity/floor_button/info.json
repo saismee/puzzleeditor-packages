@@ -27,7 +27,7 @@
 				"default": {
 					"name": "Default",
 					"activate": "instance:button;OnPressed",
-					"deactivate": "instance:button;OnPressed"
+					"deactivate": "instance:button;OnUnPressed"
 				}
 			}
 		},
