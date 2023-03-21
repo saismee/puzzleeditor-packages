@@ -22,6 +22,14 @@
 	
 	"export": {
 		"embedded_voxels": [],
+		"connections": {
+			"outputs": [
+				{
+					"activate": "instance:button;OnPressed",
+					"deactivate": "instance:button;OnPressed"
+				}
+			]
+		},
 		"conditions": [
 			{
 				"type": "switch",
