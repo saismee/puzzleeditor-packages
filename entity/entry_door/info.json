@@ -26,7 +26,15 @@
 				"default": {
 					"name": "Default",
 					"activate": "instance:door;Open",
-					"deactivate": "instance:button;Close",
+					"deactivate": "instance:door;Close",
+					"invert": "$deactivate_var"
+				}
+			},
+			"outputs": {
+				"default": {
+					"name": "Default",
+					"activate": "instance:button;OnPressed",
+					"deactivate": "instance:button;OnUnPressed",
 					"invert": "$deactivate_var"
 				}
 			}
