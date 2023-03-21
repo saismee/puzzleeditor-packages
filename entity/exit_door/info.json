@@ -24,7 +24,7 @@
 				"default": {
 					"name": "Default",
 					"activate": "instance:door;Open",
-					"deactivate": "instance:button;Close"
+					"deactivate": "instance:door;Close"
 				}
 			}
 		},
