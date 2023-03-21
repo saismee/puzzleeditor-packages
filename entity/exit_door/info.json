@@ -1,5 +1,5 @@
 {
-	"editor_version": 1,
+	"editor_version": 2,
 	"name": "Exit Door",
 	
 	"editor": {
@@ -18,6 +18,21 @@
 	"export": {
 		"embedded_voxels": [
 			"(0,-1,0)"
+		],
+		"connections": {
+			"inputs": {
+				"default": {
+					"name": "Default",
+					"activate": "instance:door;Open",
+					"deactivate": "instance:button;Close"
+				}
+			}
+		},
+		"conditions": [
+			{
+				"type": "add_instance",
+				"instance": "exit_door.vmf"
+			}
 		]
 	}
 }
