@@ -23,12 +23,13 @@
 	"export": {
 		"embedded_voxels": [],
 		"connections": {
-			"outputs": [
-				{
+			"outputs": {
+				"default": {
+					"name": "Default",
 					"activate": "instance:button;OnPressed",
 					"deactivate": "instance:button;OnPressed"
 				}
-			]
+			}
 		},
 		"conditions": [
 			{
