@@ -19,7 +19,8 @@
 			"inputs is a dictionary storing each connection type. adding more than one will prompt the user when connecting an item,",
 			"similar to how funnels work in the base puzzlemaker. invert is replaced with a fixup value, and can be omitted.",
 			"if invert is true, 'activate' will be triggered on map load.",
-			"IMPORTANT: connections should not be prefixed with an underscore. it is only here to give an example of how it should work."
+			"IMPORTANT: use 'default' as your i/o name if there is only one.",
+			"IMPORTANT: the connections array should not be prefixed with an underscore. it is only here to give an example of how it should work."
 		],
 		"_connections": {
 			"inputs": {

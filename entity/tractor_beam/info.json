@@ -1,0 +1,47 @@
+{
+	"editor_version": 2,
+	"name": "Tractor Beam",
+	
+	"editor": {
+		"locked": true,
+		
+		"options": {
+			"start_enabled": {
+				"type": "toggle",
+				"value": true,
+				"name": "Start Enabled"
+			},
+			"start_reversed": {
+				"type": "toggle",
+				"value": true,
+				"name": "Start Reversed"
+			}
+		}
+	},
+	
+	"export": {
+		"embedded_voxels": [
+			"(0,-1,0)"
+		],
+		"connections": {
+			"inputs": {
+				"active": {
+					"name": "Change active state",
+					"activate": "instance:door;Open",
+					"deactivate": "instance:door;Close"
+				},
+				"polarity": {
+					"name": "Change polarity",
+					"activate": "instance:door;Open",
+					"deactivate": "instance:door;Close"
+				}
+			}
+		},
+		"conditions": [
+			{
+				"type": "add_instance",
+				"instance": "exit_door.vmf"
+			}
+		]
+	}
+}
