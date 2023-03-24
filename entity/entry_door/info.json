@@ -50,7 +50,7 @@
 		"conditions": [
 			{
 				"type": "add_instance",
-				"instance": "entry_door.vmf"
+				"instance": "entry_door"
 			}
 		]
 	}

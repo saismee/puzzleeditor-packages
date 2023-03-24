@@ -31,7 +31,7 @@
 		"conditions": [
 			{
 				"type": "add_instance",
-				"instance": "exit_door.vmf"
+				"instance": "exit_door"
 			}
 		]
 	}
