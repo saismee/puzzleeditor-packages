@@ -23,8 +23,8 @@
 			"inputs": {
 				"default": {
 					"name": "Default",
-					"activate": "instance:door;Open",
-					"deactivate": "instance:door;Close"
+					"activate": "instance:door;Open,,0,-1",
+					"deactivate": "instance:door;Close,,0,-1"
 				}
 			}
 		},
