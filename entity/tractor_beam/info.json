@@ -27,20 +27,20 @@
 			"inputs": {
 				"active": {
 					"name": "Change active state",
-					"activate": "instance:door;Open",
-					"deactivate": "instance:door;Close"
+					"activate": "instance:fun_enable;Trigger,,0,-1",
+					"deactivate": "instance:fun_disable;Trigger,,0,-1"
 				},
 				"polarity": {
 					"name": "Change polarity",
-					"activate": "instance:door;Open",
-					"deactivate": "instance:door;Close"
+					"activate": "instance:fun_orange;Trigger,,0,-1",
+					"deactivate": "instance:fun_blue;Trigger,,0,-1"
 				}
 			}
 		},
 		"conditions": [
 			{
 				"type": "add_instance",
-				"instance": "exit_door.vmf"
+				"instance": "tractor_beam.vmf"
 			}
 		]
 	}
