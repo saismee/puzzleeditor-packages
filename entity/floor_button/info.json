@@ -3,7 +3,7 @@
 	"name": "Weighted Button",
 	
 	"editor": {
-		"mesh": "res://packages/editor/meshes/floor_button.obj",
+		"mesh": "res://packages/editor/meshes/weighted_button.obj",
 		
 		"options": {
 			"button_type": {
