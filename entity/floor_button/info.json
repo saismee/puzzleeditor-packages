@@ -3,7 +3,7 @@
 	"name": "Weighted Button",
 	
 	"editor": {
-		"_mesh": "res://packages/editor/meshes/weighted_button.obj",
+		"size": "(1,1,1)",
 		
 		"conditions": [
 			{
@@ -12,25 +12,25 @@
 				"results": {
 					"0": [
 						{
-							"type": "add_mesh",
+							"type": "set_mesh",
 							"mesh": "res://packages/editor/meshes/weighted_button.obj"
 						}
 					],
 					"1": [
 						{
-							"type": "add_mesh",
+							"type": "set_mesh",
 							"mesh": "res://packages/editor/meshes/cube_button.obj"
 						}
 					],
 					"2": [
 						{
-							"type": "add_mesh",
+							"type": "set_mesh",
 							"mesh": "res://packages/editor/meshes/ball_button.obj"
 						}
 					],
 					"3": [
 						{
-							"type": "add_mesh",
+							"type": "set_mesh",
 							"mesh": "res://packages/editor/meshes/cube_button.obj"
 						}
 					]

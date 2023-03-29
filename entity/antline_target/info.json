@@ -3,7 +3,9 @@
 	"name": "Antline Target",
 	
 	"editor": {
-		"mesh": "res://meshes/antline_handle.obj"
+		"mesh": "res://meshes/antline_handle.obj",
+		
+		"size": "(0.25,0.25,0.25)"
 	},
 	
 	"export": {

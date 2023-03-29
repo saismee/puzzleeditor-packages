@@ -3,8 +3,6 @@
 	"name": "Tractor Beam",
 	
 	"editor": {
-		"locked": true,
-		
 		"options": {
 			"start_enabled": {
 				"type": "toggle",

@@ -6,6 +6,8 @@
 		"locked": true,
 		"mesh": "res://packages/editor/meshes/exit_door.obj",
 		
+		"size": "(1,1,1)",
+		
 		"options": {
 			"start_open": {
 				"type": "toggle",
