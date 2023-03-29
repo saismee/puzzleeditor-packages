@@ -9,7 +9,7 @@
 				"1x2w": 1
 			},
 			"floor": {
-				"4x4w": 1
+				"floorw": 1
 			},
 			"ceiling": {
 				"4x4w": 1,
@@ -23,7 +23,7 @@
 				"1x2b": 1
 			},
 			"floor": {
-				"4x4b": 1
+				"floorb": 1
 			},
 			"ceiling": {
 				"4x4b": 1,
