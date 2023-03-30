@@ -1,0 +1,119 @@
+{
+	"editor_version": 3,
+	"name": "Item Dropper",
+	
+    "attribution": {
+        "BEEmod": "Vactube Editor Model"
+    },
+
+	"editor": {
+		"size": "(1,1,1)",
+		
+        "conditions": [
+			{
+				"type": "switch",
+				"key": "dropper_style",
+				"results": {
+					"0": [
+						{
+							"type": "set_mesh",
+							"mesh": "res://packages/editor/meshes/item_dropper.obj"
+						}
+					],
+					"1": [
+						{
+							"type": "set_mesh",
+							"mesh": "res://packages/editor/meshes/floating_item_dropper.obj"
+						},
+						{
+							"type": "add_mesh",
+							"mesh": "res://packages/editor/meshes/flange.obj",
+                            "position": "(0,-2,0)"
+						},
+						{
+							"type": "add_mesh",
+							"mesh": "res://packages/editor/meshes/vactube.obj",
+                            "position": "(0,0,0)"
+						},
+						{
+							"type": "add_mesh",
+							"mesh": "res://packages/editor/meshes/vactube.obj",
+                            "position": "(0,-1,0)"
+						}
+					]
+				}
+			}
+		],
+
+        "handles": {
+            "dropper_height": {
+                "type": "resize_1d"
+            }
+        },
+
+		"options": {
+			"dropper_style": {
+				"type": "radio",
+				"value": 0,
+				"name": "Dropper Style",
+				"options": [
+					"Small",
+					"Large"
+				]
+			},
+			"cube_type": {
+				"type": "radio",
+				"value": 0,
+				"name": "Cube Type",
+				"options": [
+					"Standard",
+					"Companion",
+					"Reflection",
+					"Sphere",
+					"Franken"
+				]
+			},
+			"dropper_enabled": {
+				"type": "toggle",
+				"value": true,
+				"name": "Dropper enabled"
+			},
+			"auto_drop": {
+				"type": "toggle",
+				"value": true,
+				"name": "Auto-drop first cube"
+			},
+			"auto_respawn": {
+				"type": "toggle",
+				"value": true,
+				"name": "Auto-respawn cube"
+			}
+		}
+	},
+	
+	"export": {
+		"embedded_voxels": [
+			"(0,-1,0)"
+		],
+		"connections": {
+			"inputs": {
+				"active": {
+					"name": "Change active state",
+					"activate": "instance:fun_enable;Trigger,,0,-1",
+					"deactivate": "instance:fun_disable;Trigger,,0,-1"
+				},
+				"polarity": {
+					"name": "Change polarity",
+					"activate": "instance:fun_orange;Trigger,,0,-1",
+					"deactivate": "instance:fun_blue;Trigger,,0,-1"
+				}
+			}
+		},
+		"conditions": [
+			{
+				"type": "add_instance",
+				"instance": "tractor_beam.vmf"
+			}
+		]
+	}
+}
