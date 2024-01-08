@@ -2,14 +2,14 @@
 	"editor_version": 3,
 	"name": "Item Dropper",
 	
-    "attribution": {
-        "BEEmod": "Vactube Editor Model"
-    },
+	"attribution": {
+		"BEEmod": "Vactube Editor Model"
+	},
 
 	"editor": {
 		"size": "(1,1,1)",
 		
-        "conditions": [
+		"conditions": [
 			{
 				"type": "switch",
 				"key": "dropper_style",
@@ -28,28 +28,28 @@
 						{
 							"type": "add_mesh",
 							"mesh": "res://packages/editor/meshes/flange.obj",
-                            "position": "(0,-2,0)"
+							"position": "(0,-2,0)"
 						},
 						{
 							"type": "add_mesh",
 							"mesh": "res://packages/editor/meshes/vactube.obj",
-                            "position": "(0,0,0)"
+							"position": "(0,0,0)"
 						},
 						{
 							"type": "add_mesh",
 							"mesh": "res://packages/editor/meshes/vactube.obj",
-                            "position": "(0,-1,0)"
+							"position": "(0,-1,0)"
 						}
 					]
 				}
 			}
 		],
 
-        "handles": {
-            "dropper_height": {
-                "type": "resize_1d"
-            }
-        },
+		"handles": {
+			"dropper_height": {
+				"type": "resize_1d"
+			}
+		},
 
 		"options": {
 			"dropper_style": {
