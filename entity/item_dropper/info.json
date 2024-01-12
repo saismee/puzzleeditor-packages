@@ -1,14 +1,11 @@
 {
 	"editor_version": 3,
 	"name": "Item Dropper",
-	
 	"attribution": {
 		"BEEmod": "Vactube Editor Model"
 	},
-
 	"editor": {
 		"size": "(1,1,1)",
-		
 		"conditions": [
 			{
 				"type": "switch",
@@ -44,13 +41,11 @@
 				}
 			}
 		],
-
 		"handles": {
 			"dropper_height": {
 				"type": "resize_1d"
 			}
 		},
-
 		"options": {
 			"dropper_style": {
 				"type": "radio",
@@ -90,22 +85,16 @@
 			}
 		}
 	},
-	
 	"export": {
 		"embedded_voxels": [
 			"(0,-1,0)"
 		],
 		"connections": {
 			"inputs": {
-				"active": {
-					"name": "Change active state",
-					"activate": "instance:fun_enable;Trigger,,0,-1",
-					"deactivate": "instance:fun_disable;Trigger,,0,-1"
-				},
-				"polarity": {
-					"name": "Change polarity",
-					"activate": "instance:fun_orange;Trigger,,0,-1",
-					"deactivate": "instance:fun_blue;Trigger,,0,-1"
+				"default": {
+					"name": "Default",
+					"activate": "instance:drop_relay;Trigger,,0,-1",
+					"deactivate": "instance:drop_relay;Trigger,,0,-1"
 				}
 			}
 		},
