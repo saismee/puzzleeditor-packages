@@ -4,7 +4,27 @@
 	
 	"editor": {
 		"locked": true,
-		"mesh": "res://packages/editor/meshes/exit_door.obj",
+
+		"conditions": [
+			{
+				"type": "switch",
+				"key": "start_open",
+				"results": {
+					"false": [
+						{
+							"type": "set_mesh",
+							"mesh": "res://packages/editor/meshes/exit_door.obj"
+						}
+					],
+					"true": [
+						{
+							"type": "set_mesh",
+							"mesh": "res://packages/editor/meshes/exit_door_open.obj"
+						}
+					]
+				}
+			}
+		],
 		
 		"size": "(1,1,1)",
 		
