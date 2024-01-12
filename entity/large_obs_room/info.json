@@ -1,0 +1,27 @@
+
+{
+	"editor_version": 3,
+	"name": "Large Observation Room",
+	
+	"editor": {
+		"locked": true,
+		"mesh": "res://packages/editor/meshes/observation_2x1.obj",
+		
+		"size": "(2,1,1)"
+	},
+	
+	"export": {
+		"embedded_volumes": [
+			{
+				"start": "(-0.5, 0, 0)",
+				"end": "(1.5, -1, 1)"
+			}
+		],
+		"conditions": [
+			{
+				"type": "add_instance",
+				"instance": "obs_room_2x1"
+			}
+		]
+	}
+}
