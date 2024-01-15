@@ -13,19 +13,19 @@
 					"0": [
 						{
 							"type": "set_mesh",
-							"mesh": "res://packages/editor/meshes/light_strip.obj"
+							"mesh": "res://packages/editor/meshes/light_strip/light_strip.obj"
 						}
 					],
 					"1": [
 						{
 							"type": "set_mesh",
-							"mesh": "res://packages/editor/meshes/light_strip.obj"
+							"mesh": "res://packages/editor/meshes/light_strip/light_strip_warm.obj"
 						}
 					],
 					"2": [
 						{
 							"type": "set_mesh",
-							"mesh": "res://packages/editor/meshes/light_strip.obj"
+							"mesh": "res://packages/editor/meshes/light_strip/light_strip_cold.obj"
 						}
 					]
 				}
