@@ -13,8 +13,8 @@
 	"export": {
 		"embedded_volumes": [
 			{
-				"start": "(-1, 0, 0)",
-				"end": "(1, -1, 1)"
+				"start": "(0, 0, 0)",
+				"end": "(2, -1, 1)"
 			}
 		],
 		"conditions": [
