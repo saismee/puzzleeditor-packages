@@ -22,6 +22,34 @@
 							"type": "set_mesh",
 							"mesh": "res://packages/editor/meshes/large_item_dropper.obj"
 						}
+					]
+				}
+			},
+			{
+				"type": "switch",
+				"key": "dropper_height",
+				"results": {
+					"0": [],
+					"1": [
+						{
+							"type": "set_mesh",
+							"mesh": "res://packages/editor/meshes/floating_item_dropper.obj"
+						},
+						{
+							"type": "shift_mesh",
+							"position": "(0,1,0)"
+						},
+
+						{
+							"type": "add_mesh",
+							"mesh": "res://packages/editor/meshes/flange.obj",
+							"position": "(0,0,0)"
+						},
+						{
+							"type": "add_mesh",
+							"mesh": "res://packages/editor/meshes/vactube.obj",
+							"position": "(0,0.5,0)"
+						}
 					],
 					"2": [
 						{
@@ -29,19 +57,55 @@
 							"mesh": "res://packages/editor/meshes/floating_item_dropper.obj"
 						},
 						{
-							"type": "add_mesh",
-							"mesh": "res://packages/editor/meshes/flange.obj",
-							"position": "(0,-2,0)"
+							"type": "shift_mesh",
+							"position": "(0,2,0)"
 						},
+
 						{
 							"type": "add_mesh",
-							"mesh": "res://packages/editor/meshes/vactube.obj",
+							"mesh": "res://packages/editor/meshes/flange.obj",
 							"position": "(0,0,0)"
 						},
 						{
 							"type": "add_mesh",
 							"mesh": "res://packages/editor/meshes/vactube.obj",
-							"position": "(0,-1,0)"
+							"position": "(0,0.5,0)"
+						},
+						{
+							"type": "add_mesh",
+							"mesh": "res://packages/editor/meshes/vactube.obj",
+							"position": "(0,1.5,0)"
+						}
+					],
+					"3": [
+						{
+							"type": "set_mesh",
+							"mesh": "res://packages/editor/meshes/floating_item_dropper.obj"
+						},
+						{
+							"type": "shift_mesh",
+							"position": "(0,3,0)"
+						},
+						
+						{
+							"type": "add_mesh",
+							"mesh": "res://packages/editor/meshes/flange.obj",
+							"position": "(0,0,0)"
+						},
+						{
+							"type": "add_mesh",
+							"mesh": "res://packages/editor/meshes/vactube.obj",
+							"position": "(0,0.5,0)"
+						},
+						{
+							"type": "add_mesh",
+							"mesh": "res://packages/editor/meshes/vactube.obj",
+							"position": "(0,1.5,0)"
+						},
+						{
+							"type": "add_mesh",
+							"mesh": "res://packages/editor/meshes/vactube.obj",
+							"position": "(0,2.5,0)"
 						}
 					]
 				}
@@ -49,8 +113,17 @@
 		],
 		"handles": {
 			"dropper_height": {
-				"type": "resize_1d"
-			}
+				"type": "resize_1d",
+				"mesh": "res://meshes/handle/arc.obj",
+				"rotatable": true,
+				"value": 0,
+				"positions": [
+					"(0,1,0)",
+					"(0,2,0)",
+					"(0,3,0)",
+					"(0,4,0)",
+				]
+			},
 		},
 		"options": {
 			"dropper_style": {
