@@ -4,6 +4,7 @@
 	
 	"editor": {
 		"locked": true,
+		"hidden": true,
 
 		"conditions": [
 			{

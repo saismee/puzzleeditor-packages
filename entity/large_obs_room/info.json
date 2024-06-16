@@ -5,6 +5,7 @@
 	
 	"editor": {
 		"locked": true,
+		"hidden": true,
 		"mesh": "res://packages/editor/meshes/observation_2x1.obj",
 		
 		"size": "(2,1,1)"

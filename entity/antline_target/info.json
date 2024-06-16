@@ -3,6 +3,7 @@
 	"name": "Antline Target",
 	
 	"editor": {
+		"hidden": true,
 		"mesh": "res://meshes/antline_handle.obj",
 		
 		"size": "(0.25,0.25,0.25)"

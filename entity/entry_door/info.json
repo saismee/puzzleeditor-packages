@@ -4,6 +4,7 @@
 	
 	"editor": {
 		"locked": true,
+		"hidden": true,
 		"mesh": "res://packages/editor/meshes/entry_door.obj",
 		
 		"size": "(1,1,1)"
