@@ -70,7 +70,45 @@
 		"conditions": [
 			{
 				"type": "add_instance",
-				"instance": "entry_door"
+				"instance": "doors/entry_door"
+			},
+			{
+				"type": "add_instance",
+				"instance": "doors/door_frame_black"
+			},
+			{
+				"type": "add_instance",
+				"instance": "entry/corridor_1"
+			},
+			{
+				"type": "add_instance",
+				"instance": "arrival_departure_transition_ents.vmf",
+				"global_position": "(32,32,24)"
+			},
+			{
+				"type": "add_instance",
+				"instance": "entry/elevator_entrance",
+				"global_position": "(32,32,32)",
+				"fixups": {
+					"$blue_portal": {
+						"key": "portalgun_variant",
+						"results": {
+							"0": "1",
+							"1": "1",
+							"2": "0",
+							"3": "0"
+						}
+					},
+					"$orange_portal": {
+						"key": "portalgun_variant",
+						"results": {
+							"0": "1",
+							"1": "0",
+							"2": "1",
+							"3": "0"
+						}
+					},
+				}
 			},
 			{
 				"type": "switch",
