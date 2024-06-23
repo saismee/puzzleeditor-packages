@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "9672"
-	"mapversion" "67"
+	"mapversion" "68"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "67"
+	"mapversion" "68"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -33,10 +33,10 @@ world
 		side
 		{
 			"id" "1"
-			"plane" "(-16 48 -56) (16 48 -56) (16 -48 -56)"
+			"plane" "(16 48 -56) (16 -48 -56) (-16 -48 -56)"
 			"material" "METAL/BLACK_FLOOR_METAL_001C"
-			"uaxis" "[1 0 0 64] 0.25"
-			"vaxis" "[0 -1 0 192] 0.25"
+			"uaxis" "[-1 0 0 64] 0.25"
+			"vaxis" "[0 1 0 192] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -44,10 +44,10 @@ world
 		side
 		{
 			"id" "2"
-			"plane" "(-16 -48 -64) (16 -48 -64) (16 48 -64)"
+			"plane" "(16 -48 -64) (16 48 -64) (-16 48 -64)"
 			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 -1 0 0] 0.25"
+			"uaxis" "[-1 0 0 0] 0.25"
+			"vaxis" "[0 1 0 0] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -55,9 +55,9 @@ world
 		side
 		{
 			"id" "3"
-			"plane" "(-16 48 -56) (-16 -48 -56) (-16 -48 -64)"
-			"material" "BEE2/NO_PAINT/PLASTICWALL004A"
-			"uaxis" "[0 1 0 64] 0.25"
+			"plane" "(16 48 -64) (16 -48 -64) (16 -48 -56)"
+			"material" "PLASTIC/PLASTICWALL004A"
+			"uaxis" "[0 -1 0 64] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
@@ -66,9 +66,9 @@ world
 		side
 		{
 			"id" "4"
-			"plane" "(16 48 -64) (16 -48 -64) (16 -48 -56)"
-			"material" "BEE2/NO_PAINT/PLASTICWALL004A"
-			"uaxis" "[0 1 0 64] 0.25"
+			"plane" "(-16 -48 -64) (-16 48 -64) (-16 48 -56)"
+			"material" "PLASTIC/PLASTICWALL004A"
+			"uaxis" "[0 -1 0 64] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
@@ -77,9 +77,9 @@ world
 		side
 		{
 			"id" "5"
-			"plane" "(16 48 -56) (-16 48 -56) (-16 48 -64)"
-			"material" "BEE2/NO_PAINT/PLASTICWALL004A"
-			"uaxis" "[1 0 0 0] 0.25"
+			"plane" "(16 -48 -64) (-16 -48 -64) (-16 -48 -56)"
+			"material" "PLASTIC/PLASTICWALL004A"
+			"uaxis" "[-1 0 0 64] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
@@ -88,9 +88,9 @@ world
 		side
 		{
 			"id" "6"
-			"plane" "(16 -48 -64) (-16 -48 -64) (-16 -48 -56)"
-			"material" "BEE2/NO_PAINT/PLASTICWALL004A"
-			"uaxis" "[1 0 0 0] 0.25"
+			"plane" "(-16 48 -64) (16 48 -64) (16 48 -56)"
+			"material" "PLASTIC/PLASTICWALL004A"
+			"uaxis" "[-1 0 0 64] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
@@ -109,7 +109,7 @@ entity
 	"id" "365"
 	"classname" "func_instance_io_proxy"
 	"targetname" "proxy"
-	"origin" "8 0 -32"
+	"origin" "-8 -6.99382e-007 -32"
 	editor
 	{
 		"color" "220 30 220"
@@ -274,7 +274,7 @@ entity
 {
 	"id" "51"
 	"classname" "prop_button"
-	"angles" "0 0 0"
+	"angles" "0 180 0"
 	"Delay" "999999999"
 	"istimer" "0"
 	"preventfastreset" "1"
