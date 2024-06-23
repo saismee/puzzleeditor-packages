@@ -183,7 +183,7 @@
 					"0": [
 						{
 							"type": "add_instance",
-							"instance": "item_dropper/small_item_dropper.vmf",
+							"instance": "item_dropper/small_item_dropper",
 							"fixups": {
 								"$cube_type": "cube_type",
 								"$disable_autorespawn": {
@@ -206,7 +206,7 @@
 					"1": [
 						{
 							"type": "add_instance",
-							"instance": "item_dropper/large_item_dropper.vmf",
+							"instance": "item_dropper/large_item_dropper",
 							"fixups": {
 								"$cube_type": "cube_type",
 								"$disable_autorespawn": {

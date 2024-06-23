@@ -82,7 +82,7 @@
 			},
 			{
 				"type": "add_instance",
-				"instance": "arrival_departure_transition_ents.vmf",
+				"instance": "arrival_departure_transition_ents",
 				"global_position": "(32,32,24)"
 			},
 			{

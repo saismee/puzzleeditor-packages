@@ -59,7 +59,7 @@
 					"0": [
 						{
 							"type": "add_instance",
-							"instance": "tractor_beam.vmf",
+							"instance": "tractor_beam",
 							"fixups": {
 								"$start_enabled": {
 									"key": "start_enabled",
@@ -81,7 +81,7 @@
 					"1": [
 						{
 							"type": "add_instance",
-							"instance": "large_tractor_beam.vmf",
+							"instance": "large_tractor_beam",
 							"fixups": {
 								"$start_enabled": {
 									"key": "start_enabled",
