@@ -109,31 +109,6 @@
 						}
 					},
 				}
-			},
-			{
-				"type": "switch",
-				"key": "portalgun_variant",
-				"results": {
-					"0": [
-						{
-							"type": "add_instance",
-							"instance": "entry/dual_portalgun"
-						}
-					],
-					"1": [
-						{
-							"type": "add_instance",
-							"instance": "entry/blue_portalgun"
-						}
-					],
-					"2": [
-						{
-							"type": "add_instance",
-							"instance": "entry/orange_portalgun"
-						}
-					],
-					"3": []
-				}
 			}
 		]
 	}
