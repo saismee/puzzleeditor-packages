@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "9672"
-	"mapversion" "865"
+	"mapversion" "881"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,25 +20,19 @@ visgroups
 		"visgroupid" "14"
 		"color" "247 180 117"
 	}
-	visgroup
-	{
-		"name" "3 objects"
-		"visgroupid" "17"
-		"color" "220 205 178"
-	}
 }
 viewsettings
 {
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "8"
-	"bShow3DGrid" "0"
+	"nGridSpacing" "16"
+	"bShow3DGrid" "1"
 }
 world
 {
 	"id" "1"
-	"mapversion" "865"
+	"mapversion" "881"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -3346,6 +3340,42 @@ world
 }
 entity
 {
+	"id" "132933"
+	"classname" "player_weaponstrip"
+	"targetname" "weaponstrip"
+	"origin" "64 800 96"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "133018"
+	"classname" "weapon_portalgun"
+	"angles" "0 0 0"
+	"CanFirePortal1" "$blue_portal"
+	"CanFirePortal2" "$orange_portal"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ShowingPotatos" "0"
+	"spawnflags" "0"
+	"StartingTeamNum" "0"
+	"origin" "96 96 -608"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
 	"id" "129755"
 	"classname" "logic_playerproxy"
 	"angles" "0 0 0"
@@ -3810,6 +3840,7 @@ entity
 	"id" "126070"
 	"classname" "logic_relay"
 	"angles" "0 0 0"
+	"spawnflags" "0"
 	"StartDisabled" "0"
 	"targetname" "pre_paint_rl"
 	connections
@@ -3920,43 +3951,6 @@ entity
 }
 entity
 {
-	"id" "125430"
-	"classname" "point_teleport"
-	"angles" "0 90 0"
-	"model" "models/editor/angle_helper.mdl"
-	"target" "!player"
-	"targetname" "player_start_teleport"
-	"origin" "96 800 16"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupid" "17"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
-	"id" "125446"
-	"classname" "point_template"
-	"angles" "0 0 0"
-	"spawnflags" "2"
-	"targetname" "player_start_template"
-	"Template01" "player_start_teleport"
-	"Template02" "player_start_portalgun"
-	"origin" "96 792 48"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupid" "17"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 500]"
-	}
-}
-entity
-{
 	"id" "125480"
 	"classname" "logic_relay"
 	"angles" "0 0 0"
@@ -3988,8 +3982,8 @@ entity
 	"spawnflags" "1"
 	connections
 	{
-		"OnMapSpawn" "player_start_rlTrigger0-1"
 		"OnMapSpawn" "fade_spawnFade0-1"
+		"OnMapSpawn" "weaponstripStrip0-1"
 	}
 	"origin" "120 792 48"
 	editor
@@ -4015,29 +4009,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 2000]"
-	}
-}
-entity
-{
-	"id" "125193"
-	"classname" "weapon_portalgun"
-	"angles" "0 90 0"
-	"CanFirePortal1" "1"
-	"CanFirePortal2" "1"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"renderamt" "255"
-	"rendercolor" "255 255 255"
-	"solid" "6"
-	"targetname" "player_start_portalgun"
-	"origin" "96 792 16"
-	editor
-	{
-		"color" "0 0 200"
-		"visgroupid" "17"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
 	}
 }
 entity
@@ -24132,6 +24103,446 @@ entity
 cameras
 {
 	"activecamera" "0"
+	camera
+	{
+		"position" "[95.6771 702.854 64.5009]"
+		"look" "[101.806 765.363 58.3424]"
+	}
+	camera
+	{
+		"position" "[-1328.35 -414.129 12.6516]"
+		"look" "[-1338.82 -354.756 31.314]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[59.6394 743.734 78.0147]"
+		"look" "[97.2049 783.738 46.8403]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[-1328.35 -414.129 12.6516]"
+		"look" "[-1338.82 -354.756 31.314]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[41.095 806.568 84.3458]"
+		"look" "[81.47 854.686 78.187]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[-1328.35 -414.129 12.6516]"
+		"look" "[-1338.82 -354.756 31.314]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[87.9915 740.986 107.833]"
+		"look" "[116.635 735.106 51.901]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[-1328.35 -414.129 12.6516]"
+		"look" "[-1338.82 -354.756 31.314]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[41.095 806.568 84.3458]"
+		"look" "[81.47 854.686 78.187]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[-1328.35 -414.129 12.6516]"
+		"look" "[-1338.82 -354.756 31.314]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[67.3284 701.134 61.9887]"
+		"look" "[86.573 756.397 38.3458]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[-1328.35 -414.129 12.6516]"
+		"look" "[-1338.82 -354.756 31.314]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[41.095 806.568 84.3458]"
+		"look" "[81.47 854.686 78.187]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[-1328.35 -414.129 12.6516]"
+		"look" "[-1338.82 -354.756 31.314]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[87.9915 740.986 107.833]"
+		"look" "[116.635 735.106 51.901]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[-1328.35 -414.129 12.6516]"
+		"look" "[-1338.82 -354.756 31.314]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[41.095 806.568 84.3458]"
+		"look" "[81.47 854.686 78.187]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[-1328.35 -414.129 12.6516]"
+		"look" "[-1338.82 -354.756 31.314]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[64.3359 649.764 93.5675]"
+		"look" "[78.1821 710.71 84.7838]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[-1328.35 -414.129 12.6516]"
+		"look" "[-1338.82 -354.756 31.314]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[41.095 806.568 84.3458]"
+		"look" "[81.47 854.686 78.187]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[-1328.35 -414.129 12.6516]"
+		"look" "[-1338.82 -354.756 31.314]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[87.9915 740.986 107.833]"
+		"look" "[116.635 735.106 51.901]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[-1328.35 -414.129 12.6516]"
+		"look" "[-1338.82 -354.756 31.314]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[41.095 806.568 84.3458]"
+		"look" "[81.47 854.686 78.187]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[-1328.35 -414.129 12.6516]"
+		"look" "[-1338.82 -354.756 31.314]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[67.3284 701.134 61.9887]"
+		"look" "[86.573 756.397 38.3458]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[-1328.35 -414.129 12.6516]"
+		"look" "[-1338.82 -354.756 31.314]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[41.095 806.568 84.3458]"
+		"look" "[81.47 854.686 78.187]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[-1328.35 -414.129 12.6516]"
+		"look" "[-1338.82 -354.756 31.314]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
+	camera
+	{
+		"position" "[127.087 1215.37 105.064]"
+		"look" "[116.232 1268.25 72.3711]"
+	}
 	camera
 	{
 		"position" "[87.9915 740.986 107.833]"
