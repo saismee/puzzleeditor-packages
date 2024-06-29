@@ -1,6 +1,7 @@
 {
 	"editor_version": 3,
 	"name": "Hard Light Bridge",
+	"icon": "res://packages/entity/bridge_emitter/icon.png",
 	
 	"editor": {
 		"size": "(1,0.25,0.25)",

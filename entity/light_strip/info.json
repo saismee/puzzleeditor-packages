@@ -1,6 +1,7 @@
 {
 	"editor_version": 3,
 	"name": "Light Strip",
+	"icon": "res://packages/entity/light_strip/icon.png",
 	
 	"editor": {
 		"size": "(1,1,0.25)",

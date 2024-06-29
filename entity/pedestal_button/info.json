@@ -1,6 +1,7 @@
 {
 	"editor_version": 3,
 	"name": "Pedestal Button",
+	"icon": "res://packages/entity/pedestal_button/icon.png",
 	
 	"editor": {
 		"mesh": "res://packages/editor/meshes/pedestal_button.obj",

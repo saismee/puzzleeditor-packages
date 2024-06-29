@@ -1,6 +1,13 @@
 {
-	"editor_version": 3,
+	"editor_version": 4,
 	"name": "Weighted Button",
+	"icon": "res://packages/entity/floor_button/weighted_icon.png",
+
+	"variants": [
+		"floor_button",
+		"cube_button",
+		"ball_button"
+	],
 	
 	"editor": {
 		"size": "(1,1,1)",

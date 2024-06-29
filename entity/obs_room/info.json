@@ -2,6 +2,7 @@
 {
 	"editor_version": 3,
 	"name": "Observation Room",
+	"icon": "res://packages/entity/obs_room/icon.png",
 	
 	"editor": {
 		"mesh": "res://packages/editor/meshes/observation_1x1.obj",

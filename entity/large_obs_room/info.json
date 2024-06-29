@@ -2,6 +2,7 @@
 {
 	"editor_version": 3,
 	"name": "Large Observation Room",
+	"icon": "res://packages/entity/large_obs_room/icon.png",
 	
 	"editor": {
 		"limit": 1,

@@ -1,6 +1,7 @@
 {
 	"editor_version": 3,
 	"name": "Tractor Beam",
+	"icon": "res://packages/entity/tractor_beam/icon.png",
 	
 	"editor": {
 		"size": "(1,1,1)",

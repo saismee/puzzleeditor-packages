@@ -1,6 +1,7 @@
 {
 	"editor_version": 3,
 	"name": "Item Dropper",
+	"icon": "res://packages/entity/item_dropper/icon.png",
 	"attribution": {
 		"BEEmod": "Vactube Editor Model"
 	},
