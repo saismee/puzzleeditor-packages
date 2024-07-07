@@ -1,7 +1,6 @@
 {
 	"editor_version": 3,
 	"name": "Item Dropper",
-	"icon": "res://packages/entity/item_dropper/icon.png",
 	"attribution": {
 		"BEEmod": "Vactube Editor Model"
 	},
@@ -21,112 +20,99 @@
 					],
 					"1": [
 						{
-							"type": "set_mesh",
-							"mesh": "res://packages/editor/meshes/large_item_dropper.obj"
-						}
-					]
-				}
-			},
-			{
-				"type": "switch",
-				"key": "dropper_height",
-				"results": {
-					"0": [],
-					"1": [
-						{
-							"type": "set_mesh",
-							"mesh": "res://packages/editor/meshes/floating_item_dropper.obj"
-						},
-						{
-							"type": "shift_mesh",
-							"position": "(0,1,0)"
-						},
+							"type": "switch",
+							"key": "dropper_height",
+							"results": {
+								"0": [
+									{
+										"type": "set_mesh",
+										"mesh": "res://packages/editor/meshes/large_item_dropper.obj"
+									}
+								],
+								"-1": [
+									{
+										"type": "set_mesh",
+										"mesh": "res://packages/editor/meshes/floating_item_dropper.obj"
+									},
+									{
+										"type": "shift_mesh",
+										"position": "(0,1,0)"
+									},
 
-						{
-							"type": "add_mesh",
-							"mesh": "res://packages/editor/meshes/flange.obj",
-							"position": "(0,0,0)"
-						},
-						{
-							"type": "add_mesh",
-							"mesh": "res://packages/editor/meshes/vactube.obj",
-							"position": "(0,0.5,0)"
-						}
-					],
-					"2": [
-						{
-							"type": "set_mesh",
-							"mesh": "res://packages/editor/meshes/floating_item_dropper.obj"
-						},
-						{
-							"type": "shift_mesh",
-							"position": "(0,2,0)"
-						},
+									{
+										"type": "add_mesh",
+										"mesh": "res://packages/editor/meshes/flange.obj",
+										"position": "(0,0,0)"
+									},
+									{
+										"type": "add_mesh",
+										"mesh": "res://packages/editor/meshes/vactube.obj",
+										"position": "(0,0.5,0)"
+									}
+								],
+								"-2": [
+									{
+										"type": "set_mesh",
+										"mesh": "res://packages/editor/meshes/floating_item_dropper.obj"
+									},
+									{
+										"type": "shift_mesh",
+										"position": "(0,2,0)"
+									},
 
-						{
-							"type": "add_mesh",
-							"mesh": "res://packages/editor/meshes/flange.obj",
-							"position": "(0,0,0)"
-						},
-						{
-							"type": "add_mesh",
-							"mesh": "res://packages/editor/meshes/vactube.obj",
-							"position": "(0,0.5,0)"
-						},
-						{
-							"type": "add_mesh",
-							"mesh": "res://packages/editor/meshes/vactube.obj",
-							"position": "(0,1.5,0)"
-						}
-					],
-					"3": [
-						{
-							"type": "set_mesh",
-							"mesh": "res://packages/editor/meshes/floating_item_dropper.obj"
-						},
-						{
-							"type": "shift_mesh",
-							"position": "(0,3,0)"
-						},
-						
-						{
-							"type": "add_mesh",
-							"mesh": "res://packages/editor/meshes/flange.obj",
-							"position": "(0,0,0)"
-						},
-						{
-							"type": "add_mesh",
-							"mesh": "res://packages/editor/meshes/vactube.obj",
-							"position": "(0,0.5,0)"
-						},
-						{
-							"type": "add_mesh",
-							"mesh": "res://packages/editor/meshes/vactube.obj",
-							"position": "(0,1.5,0)"
-						},
-						{
-							"type": "add_mesh",
-							"mesh": "res://packages/editor/meshes/vactube.obj",
-							"position": "(0,2.5,0)"
+									{
+										"type": "add_mesh",
+										"mesh": "res://packages/editor/meshes/flange.obj",
+										"position": "(0,0,0)"
+									},
+									{
+										"type": "add_mesh",
+										"mesh": "res://packages/editor/meshes/vactube.obj",
+										"position": "(0,0.5,0)"
+									},
+									{
+										"type": "add_mesh",
+										"mesh": "res://packages/editor/meshes/vactube.obj",
+										"position": "(0,1.5,0)"
+									}
+								],
+								"-3": [
+									{
+										"type": "set_mesh",
+										"mesh": "res://packages/editor/meshes/floating_item_dropper.obj"
+									},
+									{
+										"type": "shift_mesh",
+										"position": "(0,3,0)"
+									},
+									
+									{
+										"type": "add_mesh",
+										"mesh": "res://packages/editor/meshes/flange.obj",
+										"position": "(0,0,0)"
+									},
+									{
+										"type": "add_mesh",
+										"mesh": "res://packages/editor/meshes/vactube.obj",
+										"position": "(0,0.5,0)"
+									},
+									{
+										"type": "add_mesh",
+										"mesh": "res://packages/editor/meshes/vactube.obj",
+										"position": "(0,1.5,0)"
+									},
+									{
+										"type": "add_mesh",
+										"mesh": "res://packages/editor/meshes/vactube.obj",
+										"position": "(0,2.5,0)"
+									}
+								]
+							}
 						}
 					]
 				}
 			}
 		],
-		"handles": {
-			"dropper_height": {
-				"type": "resize_1d",
-				"mesh": "res://meshes/handle/arc.obj",
-				"rotatable": true,
-				"value": 0,
-				"positions": [
-					"(0,1,0)",
-					"(0,2,0)",
-					"(0,3,0)",
-					"(0,4,0)",
-				]
-			},
-		},
 		"options": {
 			"dropper_style": {
 				"type": "radio",
@@ -136,6 +122,15 @@
 					"Small",
 					"Large"
 				]
+			},
+			"dropper_height": {
+				"type": "integer",
+				"value": 0,
+				"min": -3,
+				"max": 0,
+				"step": 1,
+				"name": "Height",
+				"icon": "res://themes/perpetual/assets/lcd/lcdendtheta.png"
 			},
 			"cube_type": {
 				"type": "radio",
@@ -207,24 +202,113 @@
 					],
 					"1": [
 						{
-							"type": "add_instance",
-							"instance": "item_dropper/large_item_dropper",
-							"fixups": {
-								"$cube_type": "cube_type",
-								"$disable_autorespawn": {
-									"key": "auto_respawn",
-									"results": {
-										"false": "true",
-										"true": "false"
+							"type": "switch",
+							"key": "dropper_height",
+							"results": {
+								"0": [
+									{
+										"type": "add_instance",
+										"instance": "item_dropper/large_item_dropper",
+										"fixups": {
+											"$cube_type": "cube_type",
+											"$disable_autorespawn": {
+												"key": "auto_respawn",
+												"results": {
+													"false": "true",
+													"true": "false"
+												}
+											},
+											"$disable_autodrop": {
+												"key": "auto_drop",
+												"results": {
+													"false": "1",
+													"true": "0"
+												}
+											}
+										}
 									}
-								},
-								"$disable_autodrop": {
-									"key": "auto_drop",
-									"results": {
-										"false": "1",
-										"true": "0"
+								],
+								"-1": [
+									{
+										"type": "add_instance",
+										"instance": "item_dropper/large_item_dropper-tube_start"
+									},
+									{
+										"type": "add_instance",
+										"instance": "item_dropper/large_item_dropper-tube_1",
+										"fixups": {
+											"$cube_type": "cube_type",
+											"$disable_autorespawn": {
+												"key": "auto_respawn",
+												"results": {
+													"false": "true",
+													"true": "false"
+												}
+											},
+											"$disable_autodrop": {
+												"key": "auto_drop",
+												"results": {
+													"false": "1",
+													"true": "0"
+												}
+											}
+										}
 									}
-								}
+								],
+								"-2": [
+									{
+										"type": "add_instance",
+										"instance": "item_dropper/large_item_dropper-tube_start"
+									},
+									{
+										"type": "add_instance",
+										"instance": "item_dropper/large_item_dropper-tube_2",
+										"fixups": {
+											"$cube_type": "cube_type",
+											"$disable_autorespawn": {
+												"key": "auto_respawn",
+												"results": {
+													"false": "true",
+													"true": "false"
+												}
+											},
+											"$disable_autodrop": {
+												"key": "auto_drop",
+												"results": {
+													"false": "1",
+													"true": "0"
+												}
+											}
+										}
+									}
+								],
+								"-3": [
+									{
+										"type": "add_instance",
+										"instance": "item_dropper/large_item_dropper-tube_start"
+									},
+									{
+										"type": "add_instance",
+										"instance": "item_dropper/large_item_dropper-tube_3",
+										"fixups": {
+											"$cube_type": "cube_type",
+											"$disable_autorespawn": {
+												"key": "auto_respawn",
+												"results": {
+													"false": "true",
+													"true": "false"
+												}
+											},
+											"$disable_autodrop": {
+												"key": "auto_drop",
+												"results": {
+													"false": "1",
+													"true": "0"
+												}
+											}
+										}
+									}
+								]
 							}
 						}
 					]
